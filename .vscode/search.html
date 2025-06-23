@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Edenwood Middle School</title>
+    <link rel="icon" type="image/svg+xml" href="https://edenwood.peelschools.org/images/logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Apple Navigation Bar -->
+    <nav id="globalnav" class="globalnav">
+        <div class="globalnav-content">
+            <!-- Mobile menu button -->
+            <div class="globalnav-menutrigger">
+                <button id="globalnav-menutrigger-button" class="globalnav-menutrigger-button" aria-label="Menu">
+                    <span class="globalnav-menutrigger-icon">☰</span>
+                </button>
+            </div>
+
+            <!-- Navigation list -->
+            <ul id="globalnav-list" class="globalnav-list">
+                <!-- Edenwood logo -->
+                <li class="globalnav-item globalnav-item-logo">
+                    <a href="index.html" class="globalnav-link globalnav-link-logo" aria-label="Edenwood Middle School">
+                        <img src="https://edenwood.peelschools.org/images/logo.svg" alt="Edenwood Middle School" height="24">
+                    </a>
+                </li>
+
+                <!-- Store -->
+                <li class="globalnav-item">
+                    <a href="/store" class="globalnav-link">Our School</a>
+                </li>
+
+                <!-- Mac -->
+                <li class="globalnav-item">
+                    <a href="https://msg.schoolmessenger.ca/m/?s=TZFN6qlSXpU&mal=6b1bcd6a14e96046b3d7230cdcfa29781fbcaa75048071d69e7d0b3449ae1a38" class="globalnav-link">Supplies, Timings and more</a>
+                </li>
+
+                <!-- iPad -->
+                <li class="globalnav-item">
+                    <a href="news.html" class="globalnav-link">News</a>
+                </li>
+
+                <!-- iPhone -->
+                <li class="globalnav-item">
+                    <a href="/iphone" class="globalnav-link">Meet the teachers!</a>
+                </li>
+
+                <!-- Watch -->
+                <li class="globalnav-item">
+                    <a href="https://www.peelschools.org/documents/d7abbefe-66f0-422f-b57b-d3ca04701890/SYC_2024-2025_Regular-Elementary-and-Secondary-chart.pdf" class="globalnav-link">PDSB Schedule</a>
+                </li>
+
+                <!-- Support -->
+                <li class="globalnav-item">
+                    <a href="/support" class="globalnav-link">Support</a>
+                </li>
+
+                <!-- Search -->
+                <li class="globalnav-item globalnav-search">
+                    <button id="globalnav-search-button" class="globalnav-link globalnav-search-button" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
+                            <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search overlay (hidden by default) -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search the Edenwood website" class="search-input">
+            <button id="search-close" class="search-close">✕</button>
+        </div>
+    </div>
+
+    <!-- Search Results Header -->
+    <main class="main-content">
+        <h1>Search Results</h1>
+        <p id="search-query-display">Search results for: "<span id="search-term"></span>"</p>
+    </main>
+
+    <!-- Search Results Section -->
+    <section class="search-results-section">
+        <div class="search-results-container">
+            <div id="search-results" class="search-results-grid">
+                <!-- Search results will be populated here -->
+            </div>
+            <div class="no-results" id="no-results" style="display: none;">
+            <img src="https://visitidaho.org/wp-content/uploads/2023/11/Bald-Eagle-Square.png" alt="No results found" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
+            <h3>No results found</h3>
+            <p>Try different keywords or check your spelling.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logos">
+                    <img class="edenwood" src="https://edenwood.peelschools.org/images/logo.svg" alt="Edenwood Middle School" class="footer-logo">
+                    <div class="logo-divider"></div>
+                    <div class="footer-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Peel_District_School_Board_Logo.svg/111px-Peel_District_School_Board_Logo.svg.png?20110205035536" alt="Peel District School Board Logo">
+                      </div>
+                </div>
+                <p>6670 Edenwood Dr<br>
+                Mississauga, ON Canada<br>
+                L5N 3B2</p>
+                <p>905-890-1010</p>
+                <div class="social-links">
+                    <a href="https://twitter.com/peelschools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/peelschools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.40-1.439-1.40z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/peelschools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/user/PeelSchools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="https://www.peelschools.org/careers">Careers</a>
+                <a href="https://www.peelschools.org/news">News</a>
+                <a href="https://www.peelschools.org/calendar">Calendar</a>
+                <a href="https://www.peelschools.org/school-finder">School Finder</a>
+                <div class="initiatives">
+                    <div class="initiative-badge">
+                        <a href="https://www.werisetogether.ca/" target="_blank">
+                            <img src="https://www.peelschools.org/images/werisetogether.svg" alt="We Rise Together">
+                        </a>
+                    </div>
+                    <div class="initiative-badge1">
+                        <a href="https://www.peellearningfoundation.org/" target="_blank">
+                            <img src="https://mail.google.com/mail/u/1?ui=2&ik=70bd664c5d&attid=0.1&permmsgid=msg-a:r-1797826227427264849&th=197988bd1060c52f&view=fimg&fur=ip&permmsgid=msg-a:r-1797826227427264849&sz=s0-l75-ft&attbid=ANGjdJ9kHEDQZ_LyU-iYwYiEubVDmXF0H6mBOhwc9dkIEAU5N4-Jh69kzOY547XYomgx5Oqd9nzzEpqKvbuaggrcIeFjiMlIdtAvX2iaDgPAkpdXv0ckzV0V_gAb3sY&disp=emb&realattid=ii_mc7wkv880&zw" alt="Badge 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>PDSB Initiative</h3>
+                <p>Our goals are to remove barriers and create opportunities for students to achieve their full potential.</p>
+                <p>An action plan to identify and eliminate the marginalization experienced by Black students in Peel board schools.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p><a href="https://www.peelschools.org/accessibility">Accessibility</a> | <a href="https://www.peelschools.org/privacy-and-terms">Privacy and Terms</a></p>
+            <p>Copyright © 2024 Peel District School Board</p>
+            <p>School District Websites by <a href="#">Imagine Everything Inc.</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Search data with keywords for better matching
+        const searchData = [
+            {
+                id: 'school-knife-missing-lockdown',
+                title: 'Edenwood placed under lockdown due to missing X-Acto knife',
+                excerpt: 'Yesterday, Edenwood was placed under lockdown due to...',
+                keywords: ['lockdown', 'knife', 'safety', 'precaution', 'incident', 'school', 'students', 'staff', 'police'],
+                type: 'article',
+                url: 'article.html?id=school-knife-missing-lockdown'
+            },
+            {
+                id: 'spring-music-showcase',
+                title: 'Spring Music Showcase: Absolute Success!',
+                excerpt: 'Our annual spring music showcase was held last Thursday evening, featuring performances from all grade levels...',
+                keywords: ['spring', 'music', 'showcase', 'concert', 'band', 'performance', 'students', 'evening', 'grade', 'annual'],
+                type: 'article',
+                url: 'article.html?id=spring-music-showcase'
+            },
+            {
+                id: 'hold-secure',
+                title: 'Edenwood placed under hold & secure due to incident at Meadowvale SS',
+                excerpt: 'As a precautionary measure, Edenwood Middle School was placed under hold and secure protocols...',
+                keywords: ['hold', 'secure', 'safety', 'incident', 'meadowvale', 'police', 'precaution', 'lockdown', 'emergency'],
+                type: 'article',
+                url: 'article.html?id=hold-secure'
+            },
+            {
+                id: 'school-history',
+                title: 'Edenwood\'s Rich History: From Past to Present',
+                excerpt: 'Did you know that Edenwood Middle School has quite the history? Learn about our school\'s evolution...',
+                keywords: ['history', 'past', 'present', 'edenwood', 'school', 'evolution', 'heritage', 'legacy', 'founded', 'timeline'],
+                type: 'article',
+                url: 'article.html?id=school-history'
+            },
+            {
+                id: 'french-immersion',
+                title: 'French Immersion vs English Program: Making the Right Choice',
+                excerpt: 'Parents and students often wonder about the differences between our French Immersion and English programs...',
+                keywords: ['french', 'immersion', 'english', 'program', 'bilingual', 'language', 'choice', 'education', 'curriculum'],
+                type: 'article',
+                url: 'article.html?id=french-immersion'
+            },
+            {
+                id: 'extracurricular-activities',
+                title: 'Recommended Extracurricular Activities',
+                excerpt: 'Looking to get more involved at school? Here are some fantastic extracurricular activities...',
+                keywords: ['extracurricular', 'activities', 'clubs', 'sports', 'involvement', 'students', 'after', 'school', 'hobby'],
+                type: 'article',
+                url: 'article.html?id=extracurricular-activities'
+            },
+            {
+                id: 'office-contact',
+                title: 'Need Help? Contact Our Office',
+                excerpt: 'Questions about medical information, attendance, or other school matters? Our office is here to help...',
+                keywords: ['office', 'contact', 'help', 'medical', 'attendance', 'support', 'phone', 'email', 'assistance'],
+                type: 'article',
+                url: 'article.html?id=office-contact'
+            },
+            {
+                id: 'news-page',
+                title: 'Edenwood News',
+                excerpt: 'Stay up to date with the latest news and announcements from Edenwood Middle School',
+                keywords: ['news', 'announcements', 'updates', 'latest', 'information', 'school', 'events'],
+                type: 'page',
+                url: 'news.html'
+            },
+            {
+                id: 'home-page',
+                title: 'Edenwood Middle School - Home',
+                excerpt: 'Welcome to our middle school! Here you\'ll find all the things about Edenwood. Have fun!',
+                keywords: ['home', 'welcome', 'edenwood', 'middle', 'school', 'main', 'homepage'],
+                type: 'page',
+                url: 'index.html'
+            }
+        ];
+
+        // Simple typo tolerance function using Levenshtein distance
+        function levenshteinDistance(str1, str2) {
+            const matrix = [];
+            for (let i = 0; i <= str2.length; i++) {
+                matrix[i] = [i];
+            }
+            for (let j = 0; j <= str1.length; j++) {
+                matrix[0][j] = j;
+            }
+            for (let i = 1; i <= str2.length; i++) {
+                for (let j = 1; j <= str1.length; j++) {
+                    if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
+                        matrix[i][j] = matrix[i - 1][j - 1];
+                    } else {
+                        matrix[i][j] = Math.min(
+                            matrix[i - 1][j - 1] + 1,
+                            matrix[i][j - 1] + 1,
+                            matrix[i - 1][j] + 1
+                        );
+                    }
+                }
+            }
+            return matrix[str2.length][str1.length];
+        }
+
+        // Function to check if words are similar (typo tolerance)
+        function isSimilar(word1, word2, threshold = 2) {
+            if (word1.length < 3 || word2.length < 3) {
+                return word1.toLowerCase() === word2.toLowerCase();
+            }
+            return levenshteinDistance(word1.toLowerCase(), word2.toLowerCase()) <= threshold;
+        }
+
+        // Search function with typo tolerance
+        function performSearch(query) {
+            const searchTerms = query.toLowerCase().split(' ').filter(term => term.length > 0);
+            const results = [];
+
+            searchData.forEach(item => {
+                let score = 0;
+                let matchedTerms = 0;
+
+                searchTerms.forEach(searchTerm => {
+                    // Check exact matches in title
+                    if (item.title.toLowerCase().includes(searchTerm)) {
+                        score += 10;
+                        matchedTerms++;
+                    }
+                    // Check exact matches in keywords
+                    else if (item.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm))) {
+                        score += 8;
+                        matchedTerms++;
+                    }
+                    // Check similar matches in keywords (typo tolerance)
+                    else if (item.keywords.some(keyword => isSimilar(keyword, searchTerm))) {
+                        score += 6;
+                        matchedTerms++;
+                    }
+                    // Check similar matches in title words (typo tolerance)
+                    else if (item.title.toLowerCase().split(' ').some(titleWord => isSimilar(titleWord, searchTerm))) {
+                        score += 5;
+                        matchedTerms++;
+                    }
+                    // Check partial matches
+                    else if (item.excerpt.toLowerCase().includes(searchTerm)) {
+                        score += 3;
+                        matchedTerms++;
+                    }
+                });
+
+                // Only include results that match at least one search term
+                if (matchedTerms > 0) {
+                    // Boost score based on percentage of matched terms
+                    score += (matchedTerms / searchTerms.length) * 5;
+                    results.push({ ...item, score });
+                }
+            });
+
+            // Sort by score (highest first)
+            return results.sort((a, b) => b.score - a.score);
+        }
+
+        // Display search results
+        function displaySearchResults(results, query) {
+            const searchTermElement = document.getElementById('search-term');
+            const searchResultsContainer = document.getElementById('search-results');
+            const noResultsElement = document.getElementById('no-results');
+
+            searchTermElement.textContent = query;
+
+            if (results.length === 0) {
+                searchResultsContainer.style.display = 'none';
+                noResultsElement.style.display = 'block';
+                return;
+            }
+
+            noResultsElement.style.display = 'none';
+            searchResultsContainer.style.display = 'grid';
+            searchResultsContainer.innerHTML = '';
+
+            results.forEach(result => {
+                const resultCard = document.createElement('div');
+                resultCard.className = 'search-result-card';
+                resultCard.innerHTML = `
+                    <div class="search-result-content">
+                        <h3 class="search-result-title">${result.title}</h3>
+                        <p class="search-result-excerpt">${result.excerpt}</p>
+                        <span class="search-result-type">${result.type}</span>
+                    </div>
+                `;
+                resultCard.addEventListener('click', () => {
+                    window.location.href = result.url;
+                });
+                searchResultsContainer.appendChild(resultCard);
+            });
+        }
+
+        // Load search results when page loads
+        function loadSearchResults() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('q');
+
+            if (query) {
+                const results = performSearch(query);
+                displaySearchResults(results, query);
+            } else {
+                document.getElementById('search-query-display').textContent = 'No search query provided';
+                document.getElementById('no-results').style.display = 'block';
+            }
+        }
+
+        // Load search results when page loads
+        document.addEventListener('DOMContentLoaded', loadSearchResults);
+    </script>
+</body>
+</html>

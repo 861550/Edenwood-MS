@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Edenwood Middle School</title>
+    <link rel="icon" type="image/svg+xml" href="https://edenwood.peelschools.org/images/logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Apple Navigation Bar -->
+    <nav id="globalnav" class="globalnav">
+        <div class="globalnav-content">
+            <!-- Mobile menu button -->
+            <div class="globalnav-menutrigger">
+                <button id="globalnav-menutrigger-button" class="globalnav-menutrigger-button" aria-label="Menu">
+                    <span class="globalnav-menutrigger-icon">☰</span>
+                </button>
+            </div>
+
+            <!-- Navigation list -->
+            <ul id="globalnav-list" class="globalnav-list">
+                <!-- Edenwood logo -->
+                <li class="globalnav-item globalnav-item-logo">
+                    <a href="/" class="globalnav-link globalnav-link-logo" aria-label="Edenwood Middle School">
+                        <img src="https://edenwood.peelschools.org/images/logo.svg" alt="Edenwood Middle School" height="24">
+                    </a>
+                </li>
+
+                <!-- Store -->
+                <li class="globalnav-item">
+                    <a href="/store" class="globalnav-link">Our School</a>
+                </li>
+
+                <!-- Mac -->
+                <li class="globalnav-item">
+                    <a href="/mac" class="globalnav-link">Supplies</a>
+                </li>
+
+                <!-- iPad -->
+                <li class="globalnav-item">
+                    <a href="news.html" class="globalnav-link">News</a>
+                </li>
+
+                <!-- iPhone -->
+                <li class="globalnav-item">
+                    <a href="/iphone" class="globalnav-link">Meet the teachers!</a>
+                </li>
+
+                <!-- Watch -->
+                <li class="globalnav-item">
+                    <a href="/watch" class="globalnav-link">PDSB Schedule</a>
+                </li>
+
+                <!-- Support -->
+                <li class="globalnav-item">
+                    <a href="/support" class="globalnav-link">Support</a>
+                </li>
+
+                <!-- Search -->
+                <li class="globalnav-item globalnav-search">
+                    <button id="globalnav-search-button" class="globalnav-link globalnav-search-button" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
+                            <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search overlay (hidden by default) -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search the Edenwood website" class="search-input">
+            <button id="search-close" class="search-close">✕</button>
+        </div>
+    </div>
+
+    <!-- News Header -->
+    <main class="main-content">
+        <h1>Edenwood News</h1>
+        <p>Stay up to date with the latest news and announcements from Edenwood Middle School</p>
+    </main>
+
+    <!-- News Articles Grid -->
+    <section class="news-section">
+        <div class="news-container">
+            <article class="news-card" onclick="openArticle('school-knife-missing-lockdown')">
+                <div class="news-image">
+                    <img src="https://www.digitalproperties.ca/20210806/gallery/web/038-Walk-Down-the-Street-to-Your-Public-Middle-School.jpg" alt="Edenwood Middle School">
+                </div>
+                <div class="news-content">
+                    <h3>Edenwood placed under lockdown due to missing X-Acto Knife</h3>
+                    <p class="news-excerpt">Yesterday, Edenwood was placed under lockdown due to...</p>
+                    <span class="news-date">June 19, 2025</span>
+                </div>
+            </article>
+
+            <article class="news-card" onclick="openArticle('new-phone-system')">
+                <div class="news-image">
+                    <img src="https://i.ebayimg.com/images/g/8QwAAOSwq1Vim0YN/s-l500.jpg" alt="RCA 1103-1WTGA Phone System">
+                </div>
+                <div class="news-content">
+                    <h3>New phone system; any differences?</h3>
+                    <p class="news-excerpt">Recently, you may have seen people replacing the black phones with the newer RCA...</p>
+                    <span class="news-date">June 6, 2025</span>
+                </div>
+            </article>
+
+            <article class="news-card" onclick="openArticle('spring-music-showcase')">
+                <div class="news-image">
+                    <img src="https://rz.imagineeverything.com/2dda019a-6b35-4f6f-a0c7-28d0ce5604da?width=1920&url=https%3A%2F%2Fedenwood.peelschools.org%2Fimages%2F2dda019a-6b35-4f6f-a0c7-28d0ce5604da" alt="Spring Music Showcase">
+                </div>
+                <div class="news-content">
+                    <h3>Spring Music Showcase: Absolute Success!</h3>
+                    <p class="news-excerpt">Our annual spring music showcase was held last Thursday evening, featuring performances from all grade levels...</p>
+                    <span class="news-date">June 2, 2025</span>
+                </div>
+            </article>
+
+            <article class="news-card" onclick="openArticle('hold-secure')">
+                <div class="news-image">
+                    <img src="https://mistersauga.ca/wp-content/uploads/2013/09/123193_13.jpg" alt="Hold and Secure">
+                </div>
+                <div class="news-content">
+                    <h3>Edenwood placed under hold & secure due to incident at Meadowvale SS</h3>
+                    <p class="news-excerpt">As a precautionary measure, Edenwood Middle School was placed under hold and secure protocols...</p>
+                    <span class="news-date">May 29, 2025</span>
+                </div>
+            </article>
+
+            <article class="news-card" onclick="openArticle('school-history')">
+                <div class="news-image">
+                    <img src="https://maryam801.weebly.com/uploads/3/9/7/6/39768076/4253087.jpg?445" alt="School History">
+                </div>
+                <div class="news-content">
+                    <h3>Edenwood's Rich History: From Past to Present</h3>
+                    <p class="news-excerpt">Did you know that Edenwood Middle School has quite the history? Learn about our school's evolution...</p>
+                    <span class="news-date">October 20, 2024</span>
+                </div>
+            </article>
+
+            <article class="news-card" onclick="openArticle('french-immersion')">
+                <div class="news-image">
+                    <img src="https://i.redd.it/lf4qf6eesv831.jpg" alt="French Immersion">
+                </div>
+                <div class="news-content">
+                    <h3>French Immersion vs English Program: Making the Right Choice</h3>
+                    <p class="news-excerpt">Parents and students often wonder about the differences between our French Immersion and English programs...</p>
+                    <span class="news-date">September 18, 2024</span>
+                </div>
+            </article>
+
+            <article class="news-card" onclick="openArticle('extracurricular-activities')">
+                <div class="news-image">
+                    <img src="https://pbs.twimg.com/media/Daif6D-V4AEQRYD?format=jpg&name=large" alt="Extracurricular Activities">
+                </div>
+                <div class="news-content">
+                    <h3>Recommended Extracurricular Activities</h3>
+                    <p class="news-excerpt">Looking to get more involved at school? Here are some fantastic extracurricular activities...</p>
+                    <span class="news-date">September 15, 2024</span>
+                </div>
+            </article>
+
+            <article class="news-card" onclick="openArticle('office-contact')">
+                <div class="news-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgIFebDWsLzWxDeGma4bIwPRWSndACCnHOJg&s" alt="Office Contact">
+                </div>
+                <div class="news-content">
+                    <h3>Need Help? Contact Our Office</h3>
+                    <p class="news-excerpt">Questions about medical information, attendance, or other school matters? Our office is here to help...</p>
+                    <span class="news-date">September 4, 2024</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logos">
+                    <img class="edenwood" src="https://edenwood.peelschools.org/images/logo.svg" alt="Edenwood Middle School" class="footer-logo">
+                    <div class="logo-divider"></div>
+                    <div class="footer-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Peel_District_School_Board_Logo.svg/111px-Peel_District_School_Board_Logo.svg.png?20110205035536" alt="Peel District School Board Logo">
+                      </div>
+                </div>
+                <p>6670 Edenwood Dr<br>
+                Mississauga, ON Canada<br>
+                L5N 3B2</p>
+                <p>905-890-1010</p>
+                <div class="social-links">
+                    <a href="https://twitter.com/peelschools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/peelschools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.40-1.439-1.40z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/peelschools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/user/PeelSchools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="https://www.peelschools.org/careers">Careers</a>
+                <a href="https://www.peelschools.org/news">News</a>
+                <a href="https://www.peelschools.org/calendar">Calendar</a>
+                <a href="https://www.peelschools.org/school-finder">School Finder</a>
+                <div class="initiatives">
+                    <div class="initiative-badge">
+                        <a href="https://www.werisetogether.ca/" target="_blank">
+                            <img src="https://www.peelschools.org/images/werisetogether.svg" alt="We Rise Together">
+                        </a>
+                    </div>
+                    <div class="initiative-badge1">
+                        <a href="https://www.peellearningfoundation.org/" target="_blank">
+                            <img src="https://mail.google.com/mail/u/1?ui=2&ik=70bd664c5d&attid=0.1&permmsgid=msg-a:r-1797826227427264849&th=197988bd1060c52f&view=fimg&fur=ip&permmsgid=msg-a:r-1797826227427264849&sz=s0-l75-ft&attbid=ANGjdJ9kHEDQZ_LyU-iYwYiEubVDmXF0H6mBOhwc9dkIEAU5N4-Jh69kzOY547XYomgx5Oqd9nzzEpqKvbuaggrcIeFjiMlIdtAvX2iaDgPAkpdXv0ckzV0V_gAb3sY&disp=emb&realattid=ii_mc7wkv880&zw" alt="Badge 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>PDSB Initiative</h3>
+                <p>Our goals are to remove barriers and create opportunities for students to achieve their full potential.</p>
+                <p>An action plan to identify and eliminate the marginalization experienced by Black students in Peel board schools.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p><a href="https://www.peelschools.org/accessibility">Accessibility</a> | <a href="https://www.peelschools.org/privacy-and-terms">Privacy and Terms</a></p>
+            <p>Copyright © 2024 Peel District School Board</p>
+            <p>School District Websites by <a href="#">Imagine Everything Inc.</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function openArticle(articleId) {
+            window.location.href = `article.html?id=${articleId}`;
+        }
+    </script>
+</body>
+</html>

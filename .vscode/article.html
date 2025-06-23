@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - Edenwood Middle School</title>
+    <link rel="icon" type="image/svg+xml" href="https://edenwood.peelschools.org/images/logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Apple Navigation Bar -->
+    <nav id="globalnav" class="globalnav">
+        <div class="globalnav-content">
+            <!-- Mobile menu button -->
+            <div class="globalnav-menutrigger">
+                <button id="globalnav-menutrigger-button" class="globalnav-menutrigger-button" aria-label="Menu">
+                    <span class="globalnav-menutrigger-icon">☰</span>
+                </button>
+            </div>
+
+            <!-- Navigation list -->
+            <ul id="globalnav-list" class="globalnav-list">
+                <!-- Edenwood logo -->
+                <li class="globalnav-item globalnav-item-logo">
+                    <a href="/" class="globalnav-link globalnav-link-logo" aria-label="Edenwood Middle School">
+                        <img src="https://edenwood.peelschools.org/images/logo.svg" alt="Edenwood Middle School" height="24">
+                    </a>
+                </li>
+
+                <!-- Store -->
+                <li class="globalnav-item">
+                    <a href="/store" class="globalnav-link">Our School</a>
+                </li>
+
+                <!-- Mac -->
+                <li class="globalnav-item">
+                    <a href="/mac" class="globalnav-link">Supplies</a>
+                </li>
+
+                <!-- iPad -->
+                <li class="globalnav-item">
+                    <a href="news.html" class="globalnav-link">News</a>
+                </li>
+
+                <!-- iPhone -->
+                <li class="globalnav-item">
+                    <a href="/iphone" class="globalnav-link">Meet the teachers!</a>
+                </li>
+
+                <!-- Watch -->
+                <li class="globalnav-item">
+                    <a href="/watch" class="globalnav-link">PDSB Schedule</a>
+                </li>
+
+                <!-- Support -->
+                <li class="globalnav-item">
+                    <a href="/support" class="globalnav-link">Support</a>
+                </li>
+
+                <!-- Search -->
+                <li class="globalnav-item globalnav-search">
+                    <button id="globalnav-search-button" class="globalnav-link globalnav-search-button" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
+                            <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search overlay (hidden by default) -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search the Edenwood website" class="search-input">
+            <button id="search-close" class="search-close">✕</button>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-container">
+        <div class="article-content">
+            <a href="news.html" class="back-link">←  Back to News</a>
+            <h1 id="article-title" class="article-title">Loading article...</h1>
+            <div id="article-body" class="article-body">
+                <p>Loading content...</p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logos">
+                    <img class="edenwood" src="https://edenwood.peelschools.org/images/logo.svg" alt="Edenwood Middle School" class="footer-logo">
+                    <div class="logo-divider"></div>
+                    <div class="footer-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Peel_District_School_Board_Logo.svg/111px-Peel_District_School_Board_Logo.svg.png?20110205035536" alt="Peel District School Board Logo">
+                      </div>
+                </div>
+                <p>6670 Edenwood Dr<br>
+                Mississauga, ON Canada<br>
+                L5N 3B2</p>
+                <p>905-890-1010</p>
+                <div class="social-links">
+                    <a href="https://twitter.com/peelschools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/peelschools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.40-1.439-1.40z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/peelschools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/user/PeelSchools" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="https://www.peelschools.org/careers">Careers</a>
+                <a href="https://www.peelschools.org/news">News</a>
+                <a href="https://www.peelschools.org/calendar">Calendar</a>
+                <a href="https://www.peelschools.org/school-finder">School Finder</a>
+                <div class="initiatives">
+                    <div class="initiative-badge">
+                        <a href="https://www.werisetogether.ca/" target="_blank">
+                            <img src="https://www.peelschools.org/images/werisetogether.svg" alt="We Rise Together">
+                        </a>
+                    </div>
+                    <div class="initiative-badge1">
+                        <a href="https://www.peellearningfoundation.org/" target="_blank">
+                            <img src="https://mail.google.com/mail/u/1?ui=2&ik=70bd664c5d&attid=0.1&permmsgid=msg-a:r-1797826227427264849&th=197988bd1060c52f&view=fimg&fur=ip&permmsgid=msg-a:r-1797826227427264849&sz=s0-l75-ft&attbid=ANGjdJ9kHEDQZ_LyU-iYwYiEubVDmXF0H6mBOhwc9dkIEAU5N4-Jh69kzOY547XYomgx5Oqd9nzzEpqKvbuaggrcIeFjiMlIdtAvX2iaDgPAkpdXv0ckzV0V_gAb3sY&disp=emb&realattid=ii_mc7wkv880&zw" alt="Badge 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>PDSB Initiative</h3>
+                <p>Our goals are to remove barriers and create opportunities for students to achieve their full potential.</p>
+                <p>An action plan to identify and eliminate the marginalization experienced by Black students in Peel board schools.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p><a href="https://www.peelschools.org/accessibility">Accessibility</a> | <a href="https://www.peelschools.org/privacy-and-terms">Privacy and Terms</a></p>
+            <p>Copyright © 2024 Peel District School Board</p>
+            <p>School District Websites by <a href="#">Imagine Everything Inc.</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Article data
+        const articles = {
+            'school-knife-missing-lockdown': {
+                            title: 'Edenwood placed under lockdown due to missing X-Acto knife',
+                            content: `Yesterday, our school was placed under lockdown due to a missing X-Acto knife. This was a precautionary measure to ensure the safety of our students and staff. The knife was found later in the day, and the lockdown was lifted.\n\nPeel Regional Police made a post on x.com (formerly Twitter) consisting small details about the incident. The post stayed, but after an hour, there was a reply from the police stating that the lockdown had finally been lifted.\n\n"-LOCKDOWN LIFTED\n\nTurns out the knife was just misplaced..."\n\n- Peel Regional Police\n\nThe lockdown had started at 2:15 PM, at the time the students were preparing to go home. The lockdown had lasted for nearly 45 minutes. Students were directed to different places after the lockdown had been lifted, such as bus students heading to the gymnasium and the other kids to walk outside.\n\nThe next day, Vice Principal Mr. Grieve announced that the school did a wonderful job staying calm and quiet during the lockdown procedure.\n\nMr. Grieve had mentioned later that day that there was supposed to be a surprise fire drill that day, but due to the surprise situation the day before, he only announced it.\n\nThe school was back to normal the next day, and the students were able to go home as usual.\n`
+                        },
+            'new-phone-system': {
+                            title: 'New phone system; any differences?',
+                            content: `Recently, you may have seen people replacing the black phones with the newer RCA 1103-1WTGA phone system. This phone system is a bit different from the old ones, and here are some of the differences:
+
+            These phones tend to have better connectability between other landlines in the school and the outside world. This is due to the fact that the RCA 1103-1WTGA phone system is a newer model, and it has better technology.
+
+            Another reason is the PA System quality. The RCA 1103-1WTGA phone system has a better PA System quality, which means that the sound quality is better. This is due to the fact that the RCA 1103-1WTGA phone system is a more advanced model.
+
+            The only downside to this phone is that this phone doesn't have a built in LCD screen for time, or date, as the old one used to display. The older model used the LCD screen to display the time and date, but more importantly the person who was actually calling. Unfortunately on these phones, they do not have a built in screen, but rather just a keypad on the actual handset, not on any board or anything.
+
+            So despite the phone being great, I didn't see any real problem with the old phones. But maybe it was for a good reason, so who knows?`
+                        },
+            'spring-music-showcase': {
+                title: 'Spring Music Showcase: Absolute Success!',
+                content: `Our annual spring music showcase was held last Thursday evening, featuring performances from all grade levels. The event was a tremendous success, with over 100 family members and friends in attendance.
+
+The evening began with our Grade 7 and 8 Concert Band performing a beautiful rendition of classic movie hits from "Jurrasic Park" and "Star Wars," followed by the talent show players' energetic performance of contemporary hits, like Elkan from 708 and his piano piece. The evening ended off with the Rock Band preforming various classic rock songs such as "Just" by Radiohead, and "Can't Stop" by Red Hot Chili Peppers.
+
+Music teachers Mr. Zarnke and Mr. Domet expressed their pride in the students' dedication and hard work. The congratulations were sent to various teachers, such as both music teachers, Ms. M, Mr. Ladd, Ms. Jackson and Mr. Hoyte.
+
+The school's music program continues to thrive, with many students participating in at least one musical activity. Plans will start to go underway for next year's showcase, which might include a special collaboration with the Choir.
+
+We extend our gratitude to all the families who attended and supported our young musicians. Your encouragement means the world to them!`
+            },
+            'hold-secure': {
+                title: 'Edenwood placed under hold & secure due to incident at Meadowvale SS',
+                content: `As a precautionary measure, Edenwood Middle School was placed under hold and secure protocols this morning due to an incident at nearby Meadowvale Secondary School.
+
+The hold and secure was implemented at approximately 10:30 AM after we were notified by Peel Regional Police of a situation requiring additional safety measures in the area. During this time, all exterior doors were locked, and no one was permitted to enter or leave the building.
+
+All students and staff remained safe inside the school, and regular classroom activities continued as normal. The hold and secure was lifted at 2:00 PM after police confirmed that the situation had been resolved and there was no threat to our school community.
+
+Vice Principal Mr. Grieve praised the staff and students for their calm and professional response during the procedure. "Our regular safety drills prepared everyone well for this situation. Students followed protocols perfectly, and staff maintained a calm learning environment throughout."
+
+We want to thank our school community for their patience and understanding during this precautionary measure. The safety and security of our students and staff remain our top priority.
+
+If you have any questions or concerns, please don't hesitate to contact the main office at 905-824-1020.`
+            },
+            'school-history': {
+                title: 'Edenwood\'s Rich History: From Past to Present',
+                content: `Did you know that Edenwood Middle School has quite the fascinating history? Our school has been serving the community for over four decades, and it hasn't always been known by its current name.
+
+Originally opened in 1982 as Edenwood Senior Public School, our institution was one of the first purpose-built middle schools in the Peel District School Board. The name change to Edenwood Middle School occurred in 2003, reflecting the growing residential development in the surrounding area.
+
+The school was designed with an innovative open-concept layout that was popular in the late 2000s, featuring flexible learning spaces and collaborative areas. Over the years, renovations have modernized the facility while preserving its unique architectural character.
+
+Some interesting facts about our school's history:\n
+- The original enrollment was around 480 students in grades 7-8\n
+- The school's first principal, Mr. Hill, served for 4 years\n
+- Our iconic oak tree in the front courtyard was planted during the opening ceremony\n
+- The school has graduated over 8,000 students since opening
+
+Today, Edenwood Middle School serves approximately 526 students and continues to be a cornerstone of our community. We're proud of our rich heritage and look forward to many more years of educational excellence.`
+            },
+            'french-immersion': {
+                title: 'French Immersion vs English Program: Making the Right Choice',
+                content: `Parents and students often wonder about the differences between our French Immersion and English programs. Both pathways offer excellent educational opportunities, but they serve different learning goals and student needs.
+
+French Immersion Program:
+Our French Immersion program offers students the opportunity to become bilingual while receiving their regular education. Students in this program take core subjects like Science, Art, and Social Studies in French, while English, Music and Math is taught in English.
+
+Benefits include:\n
+- Bilingual proficiency opening future career opportunities\n
+- Enhanced cognitive development and problem-solving skills\n
+- Cultural awareness and global perspective\n
+- Stronger memory and multitasking abilities\n
+
+English Program:
+Our English program provides comprehensive education with additional support for students who may need extra assistance in core subjects. This program offers more flexibility in course selection and pacing.
+
+Benefits include:\n
+- More time for individual learning needs\n
+- Broader selection of elective courses\n
+- Additional support programs available\n
+- Focus on English literacy and communication skills\n
+
+Making the Decision:\n
+The choice between programs should consider your child's:\n
+- Language learning aptitude and interest\n
+- Learning style and academic confidence\n
+- Long-term educational and career goals\n
+- Social and emotional readiness\n
+
+Both programs prepare students for success in high school and beyond. We encourage families to attend our information sessions held each fall and speak with our guidance counselors about the best fit for their child.
+
+For more information about either program, please contact our Student Services department at extension 245.`
+            },
+            'extracurricular-activities': {
+                title: 'Recommended Extracurricular Activities',
+                content: `Looking to get more involved at school? Edenwood Middle School offers a wide variety of extracurricular activities designed to help students explore their interests, develop new skills, and build lasting friendships.
+
+Sports and Athletics:\n
+- Cross Country Running (Fall)\n
+- Basketball (Winter)\n
+- Track and Field (Spring)\n
+- Intramural Sports (Year-round)\n
+- Badminton Club
+
+Academic and Leadership:\n
+- Debate Team\n
+- Math Contest Preparation\n
+
+Special Interest Clubs:\n
+- Eco Club\n
+- Spooky Club\n
+- Coding and Robotics Club \n
+- Library Reading Club\n
+
+Musical activities:\n
+- Rock Band\n
+- Concert Band\n
+- Jazz Band\n
+- Half-yearly talent show group\n
+
+Getting Involved:
+Most clubs meet once a week during lunch or after school. New members are always welcome, and no previous experience is required for most activities. Club signup sheets are posted outside the main office at the beginning of each semester.
+
+Students involved in extracurricular activities often report:\n
+- Improved time management skills\n
+- Stronger sense of school community\n
+- New friendships and social connections\n
+- Discovery of hidden talents and interests\n
+- Enhanced college and scholarship applications
+
+We encourage every student to try at least one extracurricular activity. It's a great way to make the most of your middle school experience!`
+            },
+            'office-contact': {
+                title: 'Need Help? Contact Our Office',
+                content: `Questions about medical information, attendance, or other school matters? Our main office staff is here to help you navigate any concerns or questions you may have about your child's education.
+
+Main Office Services:
+Our front office staff can assist with:
+- Student attendance and absence reporting
+- Medical information and health records
+- Emergency contact updates
+- Student registration and transfers
+- General school information
+- Visitor check-in and volunteer coordination
+
+Contact Information:
+Main Office: 905-555-0123
+Fax: 905-555-0124
+Email: edenwood.office@peelschools.org
+
+Office Hours:
+Monday to Friday: 8:00 AM - 4:00 PM
+(Closed during lunch: 12:00 PM - 1:00 PM)
+
+Key Staff Contacts:
+- Principal Johnson: ext. 100
+- Vice-Principal Williams: ext. 101
+- Secretary Ms. Davis: ext. 102
+- Student Services: ext. 245
+- Attendance Line: ext. 200
+
+Common Requests:
+For your convenience, many forms and information can be found on our school website, including:
+- Absence reporting forms
+- Field trip permission slips
+- Volunteer applications
+- School calendar and important dates
+- Lunch program information
+
+Medical Information:
+If your child has medical needs, allergies, or requires medication during school hours, please contact our office immediately. We maintain strict confidentiality while ensuring all staff are informed of safety requirements.
+
+We're committed to supporting every family in our school community. Don't hesitate to reach out if you need assistance or have questions about any aspect of your child's school experience.
+
+For urgent matters outside office hours, please contact the Peel District School Board at 905-890-1010.`
+            }
+        };
+
+        // Load article based on URL parameter
+        function loadArticle() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const articleId = urlParams.get('id');
+            
+            const titleElement = document.getElementById('article-title');
+            const bodyElement = document.getElementById('article-body');
+            
+            if (articleId && articles[articleId]) {
+                const article = articles[articleId];
+                titleElement.textContent = article.title;
+                bodyElement.innerHTML = article.content.split('\n\n').map(paragraph => `<p>${paragraph}</p>`).join('');
+                document.title = `${article.title} - Edenwood Middle School`;
+            } else {
+                titleElement.textContent = 'Article Not Found';
+                bodyElement.innerHTML = '<p>Sorry, the requested article could not be found.</p>';
+            }
+        }
+
+        // Load article when page loads
+        document.addEventListener('DOMContentLoaded', loadArticle);
+    </script>
+</body>
+</html>
